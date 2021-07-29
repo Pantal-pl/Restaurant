@@ -1,0 +1,184 @@
+.content {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "menu-food second-menu"
+        "menu-food second-menu"
+        "menu-food second-menu";
+    padding: 20px;
+    transform: scale(0.99);
+}
+
+h2 {
+    padding: 10px;
+}
+
+.menu-food {
+    grid-area: menu-food;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-food h2 {
+    font-weight: 800;
+}
+
+.sushi {
+    grid-area: sushi;
+    width: 100%;
+}
+
+.sushi ul,
+.pasta ul,
+.fishes ul,
+.no-alcohol ul,
+.alcohol ul,
+.snacks ul,
+.menu-logo ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.content li {
+    font-size: 20px;
+}
+
+.second-menu {
+    grid-area: second-menu;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pasta {
+    grid-area: pasta;
+    width: 100%;
+
+}
+
+.fishes {
+    grid-area: fishes;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-logo {
+    grid-area: menu-logo;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.menu-logo img {
+    max-width: 25%;
+    min-width: 25%;
+    height: auto;
+
+}
+
+.menu-drinks {
+    grid-area: menu-drinks;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.second-menu h2 {
+    font-weight: 800;
+}
+
+.no-alcohol {
+    grid-area: no-alcohol;
+    width: 100%;
+}
+
+.alcohol {
+    grid-area: alcohol;
+    width: 100%;
+}
+
+.snacks {
+    grid-area: snacks;
+    width: 100%;
+
+}
+b {
+    margin-right: 0 !important;
+}
+.snacks,
+.sushi,
+.fishes,
+.pasta,
+.menu-drinks,
+.menu-logo {
+    border-left: 3px solid #982121;
+    margin: 10px;
+}
+.download-menu {
+    width: 160px;
+    height: 50px;
+    background: #fff;
+    border: 3px solid #982121;
+    cursor: pointer;
+    transition: .25s;
+}
+.download-menu:hover {
+    background: #982121;
+    color: white;
+}
+.sushi ul li,.pasta ul li,.snacks ul li,.fishes ul li,.no-alcohol ul li,.alcohol ul li,.menu-logo ul li {
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;justify-content: space-between;
+    border-bottom: 1px solid rgba(144, 141, 141, 0.178);
+    margin: 0 0 0 0.5em;
+    background: #fff;
+}
+
+
+@media (max-width:1024px) {
+    .content {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "menu-food"
+            "menu-food"
+            "menu-food"
+            "second-menu"
+            "second-menu"
+            "second-menu";
+        margin-left: -15px;
+    }
+    main {
+        width: 90%;
+    }
+    .sushi ul li,.pasta ul li,.snacks ul li,.fishes ul li,.no-alcohol ul li,.alcohol ul li,.menu-logo ul li {
+        width: 100%;
+    }
+}
+@media (max-width:545px) {
+    .menu-drinks {
+        flex-direction: column;
+    }
+    .content li {
+        font-size: 16px;
+    }
+
+}
+.sushi ul, .pasta ul, .fishes ul, .no-alcohol ul, .alcohol ul, .snacks ul, .menu-logo ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    width: 100%;
+}

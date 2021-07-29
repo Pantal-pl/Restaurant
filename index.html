@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More than food</title>
+    <link rel="shortcut icon" href="images/dragon.svg" type="image/x-icon">
+    <!-- Import css and js -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-slider', {
+                'cover': true,
+                'heightRatio': 1,
+                width: '30vw',
+                fixedHeight: '50vh',
+
+            }).mount();
+        });
+    </script>
+
+    <!-- <svg id="svgRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#982121" fill-opacity="1"
+            d="M0,288L30,272C60,256,120,224,180,218.7C240,213,300,235,360,224C420,213,480,171,540,165.3C600,160,660,192,720,218.7C780,245,840,267,900,256C960,245,1020,203,1080,181.3C1140,160,1200,160,1260,138.7C1320,117,1380,75,1410,53.3L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
+
+    <svg id="svgLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#982121" fill-opacity="1"
+            d="M0,192L30,186.7C60,181,120,171,180,176C240,181,300,203,360,197.3C420,192,480,160,540,176C600,192,660,256,720,266.7C780,277,840,235,900,202.7C960,171,1020,149,1080,160C1140,171,1200,213,1260,208C1320,203,1380,149,1410,122.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg> -->
+    <img id="dragon" src="images/dragon.svg" alt="dragon background image">
+    <a href="#top">
+        <button class="page-up">
+            <div class="page-up-arrow"></div>
+        </button>
+        </div>
+    </a>
+
+    <nav class="navigation-mobile">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <!-- <li><a href="reservation.html">Reservation</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="top"></div>
+        <nav class="navigation navbar-fixed-top">
+            <div class="logo logo1">
+                <div class="l">G</div>
+                <div class="o">O</div>
+                <div class="g">O</div>
+                <div class="o2">D</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <!-- <li><a href="reservation.html">Reservation</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo logo2">
+                <div class="l">F</div>
+                <div class="o">O</div>
+                <div class="g">O</div>
+                <div class="o2">D</div>
+            </div>
+            <button class="menu-btn">
+                <hr class="menu1 hr" id="dis">
+                <hr class="menu2 hr" id="dis">
+                <hr class="menu3 hr" id="dis">
+            </button>
+        </nav>
+
+        <section class="content">
+            <div class="description" id="top">
+                <div id="image-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="images/kitchen.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/shusi2.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/shusi1.jpg">
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="description-text">
+                    <p>Nasze dania zawdzięczają wyjątkowość połączeniu tradycyjnych japońskich receptur ze smakiem i doświadczeniem innych kultur i kuchni.</p>
+                    <br>
+                    <p>Niezwykłe sushi w stylu fusion i aromatyczne tatary to nasza specjalność.</p>
+                    <br>
+                    <p>Kameralna, domowa atmosfera, orientalna gościnność i wyjątkowe smaki - to nasza recepta na sukces. 
+                    </p>
+                </div>
+            </div>
+            <div class="space">
+                <div class="point"></div>
+                <div class="arrow"></div>
+                <div class="arrow2"></div>
+            </div>
+            <div class="food">
+                <div class="img1"><img src="images/shusi3.jpg" alt=""></div>
+                <div class="img2"><img src="images/shusi4.jpg" alt=""></div>
+                <div class="img3"><img src="images/shusi5.jpg" alt=""></div>
+                <div class="img4"><img src="images/shusi6.jpg" alt=""></div>
+                <div class="food-text">
+                    <p class="Food-ad">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos architecto
+                        explicabo maiores velit voluptatibus fuga et ab ipsa corporis commodi?</p>
+                </div>
+                <div class="food-heading">
+                    <h2>Our food</h2>
+                </div>
+            </div>
+            <div class="space">
+                <div class="point"></div>
+                <div class="arrow"></div>
+                <div class="arrow2"></div>
+            </div>
+            <div class="drinks">
+                <div class="img1-2"><img src="images/drink1.jpg" alt=""></div>
+                <div class="img2-2"><img src="images/drink2.jpg" alt=""></div>
+                <div class="img3-2"><img src="images/drink3.jpg" alt=""></div>
+                <div class="img4-2"><img src="images/drink4.jpg" alt=""></div>
+                <div class="drinks-text">
+                    <p class="drinks-ad">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos architecto
+                        explicabo maiores velit voluptatibus fuga et ab ipsa corporis commodi?</p>
+                </div>
+                <div class="drinks-heading">
+                    <h2>Our drinks</h2>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <a href="tel:">Tel: +48 824 922 142</a>
+        <a href="mailto:">E-mail: test@gmail.com</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn")
+        const mobileMenu = document.querySelector(".navigation-mobile")
+        const body = document.querySelector("body")
+        const activeMenu1 = document.querySelector(".active-menu1")
+        const activeMenu2 = document.querySelector(".active-menu2")
+        const activeMenu3 = document.querySelector(".active-menu3")
+        const menu1 = document.querySelector(".menu1")
+        const menu2 = document.querySelector(".menu2")
+        const menu3 = document.querySelector(".menu3")
+
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('navigation-mobile-active')
+            body.classList.toggle('active')
+            menu1.classList.toggle('active-menu2')
+            menu2.classList.toggle('active-menu3')
+            menu3.classList.toggle('active-menu1')
+
+        })
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('navigation-mobile-active')
+            body.classList.toggle('active')
+            menu1.classList.toggle('active-menu2')
+            menu2.classList.toggle('active-menu3')
+            menu3.classList.toggle('active-menu1')
+        })
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("dragon").style.width = "7%";
+                document.getElementById("dragon").style.marginTop = "3vh";
+            } else {
+                document.getElementById("dragon").style.width = "10%";
+                document.getElementById("dragon").style.marginTop = "0.2vh";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

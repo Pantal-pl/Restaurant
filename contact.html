@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/dragon.svg" type="image/x-icon">
+    <title>More than food</title>
+    <!-- Import css and js -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reservation.css">
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <script>
+        function initMap() {
+            var location = {
+                lat: 52.41375545577558,
+                lng: 16.899403316327593
+
+            };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <img id="dragon" src="images/dragon.svg" alt="dragon background image">
+    <a href="#top">
+        <button class="page-up">
+            <div class="page-up-arrow"></div>
+        </button>
+        </div>
+    </a>
+
+    <nav class="navigation-mobile">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <!-- <li><a href="reservation.html">Reservation</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <nav class="navigation navbar-fixed-top">
+            <div class="logo logo1">
+                <div class="l">M</div>
+                <div class="o">O</div>
+                <div class="g">R</div>
+                <div class="o2">E</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <!-- <li><a href="reservation.html">Reservation</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo logo2">
+                <div class="l">F</div>
+                <div class="o">O</div>
+                <div class="g">O</div>
+                <div class="o2">D</div>
+            </div>
+            <button class="menu-btn">
+                <hr class="menu1 hr" id="dis">
+                <hr class="menu2 hr" id="dis">
+                <hr class="menu3 hr" id="dis">
+            </button>
+        </nav>
+
+        <section class="content">
+
+
+            <div id="map"></div>
+
+
+            <div class="reservation-form">
+                <form action="#">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" id="name" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-top-right">
+                            <label for="email">E-mail*</label>
+                            <br>
+                            <input type="email" id="email" name="email" required placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <label for="message">Message*</label>
+                        <br>
+                        <textarea name="message" required placeholder="Enter a message..." id="message" cols="30"
+                            rows="10"></textarea>
+
+                    </div>
+                    <div class="submit-box">
+                        <input class="submit" type="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <a href="tel:">Tel: +48 824 922 142</a>
+        <a href="mailto:">E-mail: test@gmail.com</a>
+    </footer>
+
+    <script>
+        const submit = document.querySelector(".submit-box")
+        const success = document.querySelector(".success")
+        const menuBtn = document.querySelector(".menu-btn")
+        const mobileMenu = document.querySelector(".navigation-mobile")
+        const body = document.querySelector("body")
+        const activeMenu1 = document.querySelector(".active-menu1")
+        const activeMenu2 = document.querySelector(".active-menu2")
+        const activeMenu3 = document.querySelector(".active-menu3")
+        const menu1 = document.querySelector(".menu1")
+        const menu2 = document.querySelector(".menu2")
+        const menu3 = document.querySelector(".menu3")
+
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('navigation-mobile-active')
+            body.classList.toggle('active')
+            menu1.classList.toggle('active-menu2')
+            menu2.classList.toggle('active-menu3')
+            menu3.classList.toggle('active-menu1')
+
+        })
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('navigation-mobile-active')
+            body.classList.toggle('active')
+            menu1.classList.toggle('active-menu2')
+            menu2.classList.toggle('active-menu3')
+            menu3.classList.toggle('active-menu1')
+        })
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("dragon").style.width = "7%";
+                document.getElementById("dragon").style.marginTop = "3vh";
+            } else {
+                document.getElementById("dragon").style.width = "10%";
+                document.getElementById("dragon").style.marginTop = "0.2vh";
+            }
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn9KLN6p9YM_0f9SkhyLETQnGRve-Kgvs&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>
